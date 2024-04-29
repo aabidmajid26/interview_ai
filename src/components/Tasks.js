@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { addTask, deleteTask, updateTask } from "../store/taskSlice";
 import Task from "./Task";
+import { sortTasks } from "../utils/sortTasks";
 
 const Tasks = () => {
   const [task, setTask] = useState({
@@ -14,6 +15,8 @@ const Tasks = () => {
     key: null,
   });
   const tasks = useSelector((state) => state.tasks);
+
+  const sortedTasks = sortTasks(tasks.tasks, "priority");
 
   const dispatch = useDispatch();
 
@@ -63,7 +66,7 @@ const Tasks = () => {
       <div>
         <table>
           <tbody>
-            {Object.values(tasks.tasks).map((task, idx) => {
+            {sortedTasks.map((task, idx) => {
               return <Task key={task.name} task={task} idx={idx} />;
             })}
           </tbody>
