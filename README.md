@@ -5,6 +5,9 @@ ________________________________________________________________________________
 
 - I created a new component for each task which made the task editing/deletion easier.
 
+### check out these files for the new code changes:
+- Tasks.js, Task.js, taskSlice.js
+
 
 _______________________________________________________________________________________________________________
 
