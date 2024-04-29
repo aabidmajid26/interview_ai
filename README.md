@@ -1,3 +1,19 @@
+_______________________________________________________________________________________________________________
+### Quick explanation of the approach for the task list(pending tasks):
+
+- I finished the update and delete functionality
+
+- I created a new component for each task which made the task editing/deletion easier.
+
+### check out these files for the new code changes:
+- Tasks.js, Task.js, taskSlice.js, sortTasks.js
+
+
+_______________________________________________________________________________________________________________
+
+
+
+
 - ## cell value can be:
 
   - empty
